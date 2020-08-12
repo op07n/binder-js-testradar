@@ -4,7 +4,7 @@ const app = express();
 const port = 3000;
 
 //route
-app.get('/with-cors', cors(), (req, res, next) => {
+app.get('/', cors(), (req, res, next) => {
   res.json({ msg: 'WHOAH with CORS it works! 🔝 🎉' })
 })
 
