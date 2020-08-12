@@ -17,6 +17,10 @@ app.options('*', cors())
 app.use("/lib", express.static("./lib"));
 app.use("/assets", express.static("./assets"));
 
+app.use("/", express.static("./"));
+
+
+
 //route
 app.get('/test-cors', cors(), (req, res, next) => {
   res.json({ msg: 'WHOAH with CORS it works! 🔝 🎉' })
