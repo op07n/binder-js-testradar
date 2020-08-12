@@ -4,8 +4,10 @@ const app = express();
 const port = 3000;
 
 
-// serve files from the public directory
-app.use(express.static('public'));
+
+app.use(express.static('lib'));
+app.use(express.static('assets'));
+
 
 
 //route
