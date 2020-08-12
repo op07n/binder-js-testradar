@@ -5,8 +5,8 @@ const port = 3000;
 
 
 
-app.use(express.static('lib'));
-app.use(express.static('assets'));
+app.use(cors(), express.static('lib'));
+app.use(cors(), express.static('assets'));
 
 
 
